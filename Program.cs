@@ -46,7 +46,7 @@ Console.Write( "input number quart: " );
 int quart = Convert.ToInt32(Console.ReadLine());
 
 FindRange(quart);
-*/
+
 
 // задача напишите программу которая принимает на вход координаты 2х точек и находит расстояние между ними  в 2Д пространстве
 
@@ -66,5 +66,22 @@ double y2 = Convert.ToDouble(Console.ReadLine());
 double coordinate = FindDistance(x1, y1, x2, y2);
 Console.WriteLine($"Distanse is {coordinate}");
 
+*/
+
+// задача необходимо написать программу которая принимает на вход число N и выдает наконсоль квадраты до числа N.
+
+void Showqvadrat(int n)
+{
+    int current = 1;
+    while (current <= n)
+    {
+        Console.WriteLine($"Qvadrat number {current} = {current * current} ");
+    current ++;
+    }
+}
+Console.WriteLine("input number: " );
+int number = Convert.ToInt32(Console.ReadLine());
+
+Showqvadrat(number);
 
 
